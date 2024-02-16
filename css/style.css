@@ -53,15 +53,26 @@ li{
     color: #391E88;
     font-size: 0.8125rem;
     position: absolute;
-    bottom: -20%;
-    left: 0%;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 
 .section-ttl.__menu::after{
     content: "事業内容";
     color: #391E88;
-    font-size: 18px;
+    font-size: 0.8125rem;
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-ttl.__works::after{
+    content: "制作実績";
+    color: #391E88;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -69,9 +80,9 @@ li{
 }
 
 .section-ttl.__info::after{
-    content: "制作実績";
+    content: "採用情報";
     color: #391E88;
-    font-size: 18px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -81,7 +92,7 @@ li{
 .section-ttl.__access::after{
     content: "私たちについて";
     color: #391E88;
-    font-size: 18px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -91,7 +102,7 @@ li{
 .section-ttl.__contact::after{
     content:"お問い合わせ";
     color: #391E88;
-    font-size: 12px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -110,7 +121,7 @@ li{
 .sub-section-ttl.__sub-news::after{
     content: "お知らせ";
     color: white;
-    font-size: 15px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -119,7 +130,7 @@ li{
 .sub-section-ttl.__sub-service::after{
     content: "事業内容";
     color: white;
-    font-size: 15px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -129,7 +140,7 @@ li{
 .sub-section-ttl.__sub-works::after{
     content: "制作実績";
     color: white;
-    font-size: 15px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -139,7 +150,7 @@ li{
 .sub-section-ttl.__sub-company::after{
     content: "私たちについて";
     color: white;
-    font-size: 15px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -149,7 +160,7 @@ li{
 .sub-section-ttl.__sub-recruit::after{
     content: "採用情報";
     color: white;
-    font-size: 15px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -159,7 +170,7 @@ li{
 .sub-section-ttl.__sub-contact::after{
     content: "お問い合わせ";
     color: white;
-    font-size: 15px;
+    font-size: 0.8125rem;
     position: absolute;
     bottom: -30%;
     left: 50%;
@@ -409,6 +420,13 @@ li{
 }
 /*concept*/
 .concept-main{
+    width: 80%;
+    font-size: 0.875rem;
+    margin-left: 25%;
+    margin-top: -60px;
+}
+
+._news{
     width: 80%;
     font-size: 0.875rem;
     margin-left: 15%;
@@ -1148,8 +1166,6 @@ select{
         color: #391E88;
         font-size: 0.8125rem;
         position: absolute;
-        bottom: -20%;
-        left: 45%;
     }
 
     .concept-txt{
@@ -1166,9 +1182,6 @@ select{
         width: 90%;
         margin: auto;
     }
-    .__category::after{
-
-    }
 
     .menu-item{
         width: 90%;
@@ -1177,6 +1190,11 @@ select{
 
     .menu-img-box{
         height: 300px;
+    }
+
+    .access-sentence{
+        width: 70%;
+        margin: 0 auto;
     }
 
     .section-inner-l{
@@ -1423,5 +1441,9 @@ select{
         padding-bottom: 60px;
         opacity: 0.5;
     }
-}
 
+    .contact-sentence{
+        width: 80%;
+        margin: 0 auto; 
+    }
+}
