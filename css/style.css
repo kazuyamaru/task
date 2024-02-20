@@ -112,7 +112,7 @@ li{
 .sub-section-ttl{
     text-align: center;
     margin-top: -20px;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: white;
     position: relative;
@@ -148,11 +148,13 @@ li{
 }
 
 .sub-section-ttl.__sub-company::after{
+    width: 95px;
+    margin-left: 10px;
     content: "私たちについて";
     color: white;
     font-size: 0.8125rem;
     position: absolute;
-    bottom: -30%;
+    bottom: -35%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -168,6 +170,7 @@ li{
 }
 
 .sub-section-ttl.__sub-contact::after{
+    width: 95px;
     content: "お問い合わせ";
     color: white;
     font-size: 0.8125rem;
@@ -179,7 +182,7 @@ li{
 
 .sub-section-inner{
     width: 90%;
-    margin: 120px 5%;
+    margin: 100px auto;
 }
 
 /*btn*/
@@ -394,6 +397,30 @@ li{
     color: #391E88;
 }
 
+
+/*——　文字の右にライン　——*/
+.title-border-right {
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    right: -100px;
+    bottom: 5%;
+    width: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    rotate: 90deg;
+}
+.title-border-right:after {
+    border-top: 2px solid;
+    content: "";
+    flex-grow: 1;
+}
+.title-border-right:after {
+    margin-left: 0.5rem;
+}
+
+
 .circle{
     width: 50px;
    height: 50px;
@@ -606,9 +633,15 @@ li{
     text-align: center;
     font-size: 0.6875rem;
     color: #fff;
-    padding: 5px 2px;
+    padding: 3px 2px;
     margin-right: 5px;
     border-radius: 5px;
+}
+
+.fab{
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-right: 3px;
 }
 
 ._facebook{
@@ -625,8 +658,13 @@ li{
     background-color: #1da1f2;
 }
 
+._twitter img{
+    width: 17px;
+    height: 17px;
+}
+
 ._bookmark{
-    width: 80px;
+    width: 90px;
     background-color: #1da1f2;
 }
 
@@ -652,7 +690,6 @@ li{
     text-align: center;
     padding: 30px 0;
     margin: 10px 0;
-
 }
 
 .magazine-square li:nth-child(2){
@@ -741,7 +778,7 @@ li{
     padding-top: 5%;
     margin: 0 auto;
     display: flex;
-    background: linear-gradient(90deg, transparent 0%, transparent 33.5%, #f0f0f0 33.5%, #f0f0f0 100%);;
+    background: linear-gradient(90deg, transparent 0%, transparent 0, #f0f0f0 100%, #f0f0f0 100%);;
 }
 
 .section-inner-m{
@@ -845,23 +882,21 @@ li{
 }
 
 .access-content{
-   padding-top: 20px;
+   padding-top: 40px;
 }
 
 .access-ttl{
     font-size: 2rem;
-    width: 300px;
+    width: 530px;
+    margin: 0 auto;
     font-weight: 600;
     letter-spacing: 0.08em;
     line-height: 1.3;
-    background: linear-gradient(transparent 90%, yellow 10%);
-    display: inline-block;
+    background: linear-gradient(transparent 70%, yellow 30%);
+    display: flex;
 }
 
-.border-line{
-    background: linear-gradient(transparent 85%, yellow 15%);
-    display: inline-block;
-}
+
 
 .access-sentence{
     padding-top: 15px;
@@ -1106,12 +1141,16 @@ select{
 }
 
 @media screen and (max-width:780px){
+    .section-inner{
+        width: 95%;
+        margin: 0 auto;
+    }
 
     .section-ttl{
         font-size: 1.8rem;
     }
     .kv.__index{
-        height: 760px;
+        height: 100vh;
         background-image: url(../image/mv-pc.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -1158,6 +1197,26 @@ select{
         margin-top: 50px;
     }
 
+    .access-ttl{
+        font-size: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        line-height: 1.3;
+        background: linear-gradient(transparent 90%, yellow 10%);
+        display: block;
+    }
+    
+
+    /*contact*/
+.contact-wrap{
+    width: 100%;
+    background-color: #f0f0f0;  
+    padding: 60px 0;
+    margin-top: 80px;
+}
+/*news.html*/
     .__concept{
         width: 80%;
     }
@@ -1177,6 +1236,12 @@ select{
         display: block;
     }
 
+    .news-btn{
+        width: 120px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
     .concept-main{
         margin-top: 50px;
         width: 90%;
@@ -1193,8 +1258,15 @@ select{
     }
 
     .access-sentence{
+        font-size: 15px;
         width: 70%;
         margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    .sub-section-inner{
+        width: 98%;
+        margin: 30px auto;
     }
 
     .section-inner-l{
@@ -1209,12 +1281,16 @@ select{
         width: 100%;
         background-color: #f0f0f0;
         text-align: center;
+        margin-top: -160px;
+        padding-top: 160px;
     }
 
     .section-sentence{
+        font-size: 15px;
         width: 100%;
         text-align: center;
         padding-top: 30px;
+        line-height: 2;
     }
 
     .section-wrap-access{
@@ -1222,12 +1298,17 @@ select{
         margin: 0 ;
     }
 
+    .section-wrap-recruit{
+        width: 100%;
+        margin: 0 ;
+    }
 
     .section-inner-recruit{
         width: 100%;
         height: 350px;
         display: flex;
         flex-wrap: wrap;
+        margin-top: -80px;
     }
 
     .recruit-inner {
@@ -1244,7 +1325,27 @@ select{
     .contact-wrap{
         margin-top: 250px;
     }
+/*news-magagine.html*/
+    .news-section-inner{
+      width: 90%;
+     margin: 0 auto;
+    }
 
+    .magazine-ttl{
+        font-size: 20px;
+    }
+
+    .magazine-txt{
+        width: 45%;
+        padding-left: 15px;
+    }
+
+    .magazine-square li:nth-child(2){
+        border-left: 3px solid #B8AED5;
+        margin-left: 5%;
+    }
+
+/*service.html*/
     .service-content{
         display: block;
     }
@@ -1255,12 +1356,15 @@ select{
     }
 
     .service-ttl{
-        margin: 0 30%;
+        width: 30px;
+        margin-left: 25%;
+        font-size: 20px;
     }
     
     .service-txt{
         width: 90%;
-        margin:auto
+        margin:auto;
+        font-size: 13px;
         line-height: 2;
     }
 
@@ -1291,6 +1395,8 @@ select{
         margin-top: -20px;
     }
 
+    /*company*/
+
     .section-inner-company{
         width: 100%;
         margin: 0 auto;
@@ -1303,12 +1409,17 @@ select{
         background-size: cover;
         background-image: url(../image/page-company-bg-pc.png);
         text-align: center;
-        padding-top: 100px;
+        padding-top: 50px;
+    }
+
+    .border-line{
+        background: linear-gradient(transparent 80%, yellow 20%);
+        display: inline-block;
     }
 
     .company-content{
         display: block;
-        margin-top: -200px;
+        margin-top: -250px;
     }
     
     .company-img{
@@ -1319,6 +1430,10 @@ select{
     .company-txt{
         width: 90%;
         margin: 10px 5%;
+    }
+
+    .info-content{
+        margin-top: 30px;
     }
 
     .recruit-ttl{
@@ -1361,6 +1476,14 @@ select{
     .information{
         margin-top: 0;
     }
+/*recruit.html*/
+    .sab-recruit-inner{
+        padding-top: 50px;
+    }
+
+    ._recruit{
+        margin-top: 50px;
+    }
 
     .recruit-movie-content iframe{
         height: 300px;
@@ -1400,6 +1523,10 @@ select{
 
     .contact-list{
         padding-bottom: 10px;
+    }
+
+    .contact-ttl{
+        width: 90%;
     }
 
     .contact-area textarea{
@@ -1446,4 +1573,13 @@ select{
         width: 80%;
         margin: 0 auto; 
     }
+
+    .circle{
+        right: 25px;
+        bottom: 30px;
+    }
+}
+
+@media screen {
+    
 }
